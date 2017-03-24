@@ -11,50 +11,53 @@ package calculadora;
  */
 public class Calculadora {
     
-    float numero1;
+    double numero1;
 
-    public float getNumero1() {
+    public double getNumero1() {
         return numero1;
     }
 
-    public void setNumero1(float numero1) {
+    public double setNumero1(double numero1) {
         this.numero1 = numero1;
+        return 0;
     }
 
-    public float getNumero2() {
+    public double getNumero2() {
         return numero2;
     }
 
-    public void setNumero2(float numero2) {
+    public double setNumero2(double numero2) {
         this.numero2 = numero2;
+        return 0;
     }
 
-    public float getResultado() {
+    public double getResultado() {
         return resultado;
     }
 
-    public void setResultado(float resultado) {
+    public double setResultado(double resultado) {
         this.resultado = resultado;
+        return 0;
     }
-    float numero2;
-    float resultado;
+    double numero2;
+    double resultado;
     
     
-    public float suma(){
+    public double suma(){
         
         this.resultado=this.numero1+this.numero2;
         return this.resultado;
         
     }
     
-     public float resta(){
+     public double resta(){
         
         this.resultado=this.numero1-this.numero2;
         return this.resultado;
         
     }
      
-      public float multiplicacion(){
+      public double multiplicacion(){
         
         this.resultado=this.numero1*this.numero2;
         return this.resultado;
@@ -62,12 +65,35 @@ public class Calculadora {
     }
       
       
-       public float dicvision(){
+       public double dicvision(){
         
         this.resultado=this.numero1/this.numero2;
         return this.resultado;
         
     }
+       public double seno(){
+           
+           double a;
+           a=Math.toRadians(numero1);
+           this.resultado=Math.sin(a);
+           return this.resultado;
+       }
+       
+       public double coseno(){
+           
+           double a;
+           a=Math.toRadians(numero1);
+           this.resultado=Math.cos(a);
+           return this.resultado;
+       }
+       
+       public double tangente(){
+           
+           double a;
+           a=Math.toRadians(numero1);
+           this.resultado=Math.tan(a);
+           return this.resultado;
+       }
        
      
     
